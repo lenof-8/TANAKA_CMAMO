@@ -14,9 +14,8 @@ GameObject:
   - component: {fileID: 8000841461039943648}
   - component: {fileID: 1175108721232513360}
   - component: {fileID: 6711591367136670039}
-  - component: {fileID: -4139152357561596990}
   m_Layer: 0
-  m_Name: Enemigo3
+  m_Name: Enemigo2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -194,18 +193,3 @@ MonoBehaviour:
   moveSpeed: 4
   _bSpeed: 6
   _bCooldown: 1
---- !u!114 &-4139152357561596990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8061870058746476969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbcb4f572aa1fc74e847a70ed8b075b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life: 10
-  pBullet: {fileID: 0}
-  pStats: {fileID: 0}
