@@ -5,9 +5,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    [SerializeField] float _shootTime;
+    private float _shootTime;
     [SerializeField] float _shootMaxTime;
     [SerializeField] float _speed;
+    [SerializeField] float bSpeed;
     [SerializeField] Rigidbody2D _rb;
     [SerializeField] GameObject _playerBullet;
     private int lastDir;
@@ -44,7 +45,7 @@ public class Player : MonoBehaviour
 
 
                 GameObject bullet = Instantiate(_playerBullet, transform.position, Quaternion.identity);
-                bullet.GetComponent<Rigidbody2D>().velocity = direction.normalized * 30f;
+                bullet.GetComponent<Rigidbody2D>().velocity = direction.normalized * bSpeed;
                 _shootTime = 0;
             }
         }

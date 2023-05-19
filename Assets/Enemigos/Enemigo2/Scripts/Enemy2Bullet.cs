@@ -18,7 +18,7 @@ public class Enemy3Bullet : MonoBehaviour
     private void Update()
     {
         bullTimer += Time.deltaTime;
-        bullGrowTimer += Time.deltaTime * 0.05f;
+        bullGrowTimer += Time.deltaTime * bullGrowSpeed;
 
         if (bullTimer >= bullTimerMax)
             Destroy(this.gameObject);
