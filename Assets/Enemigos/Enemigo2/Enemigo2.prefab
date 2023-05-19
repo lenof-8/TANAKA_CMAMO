@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 8000841461039943648}
   - component: {fileID: 1175108721232513360}
   - component: {fileID: 6711591367136670039}
+  - component: {fileID: -9182290283712728294}
+  - component: {fileID: 7807260373732658157}
   m_Layer: 0
   m_Name: Enemigo2
   m_TagString: Enemy
@@ -171,7 +173,7 @@ MonoBehaviour:
   detectionDelay: 0.3
   detectorLayerMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   debugIdleColor: {r: 1, g: 0, b: 0, a: 0.05490196}
   debugDetectedColor: {r: 0, g: 1, b: 0, a: 0.05490196}
   showGizmos: 1
@@ -189,7 +191,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detect: {fileID: 0}
   player: {fileID: 0}
-  bulletEnemy3: {fileID: 7068244549250123154, guid: 38d0dec3db57a1e489e4ca08ce9a67d2, type: 3}
+  bulletEnemy3: {fileID: 3157245430450827506, guid: 702485a1cefe10540b2d3b4fc80ffe71, type: 3}
   moveSpeed: 4
   _bSpeed: 6
   _bCooldown: 1
+--- !u!114 &-9182290283712728294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8061870058746476969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713e4d6868f40a64fb732d01609f4eea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 0
+  pBullet: {fileID: 0}
+  pStats: {fileID: 0}
+--- !u!114 &7807260373732658157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8061870058746476969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb8febc887c0a747add271273b4e5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeGrowSpeed: 0.4
