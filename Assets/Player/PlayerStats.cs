@@ -15,8 +15,7 @@ public class PlayerStats : MonoBehaviour
     }
 
     void Update()
-    {
-       
+    {    
 
         if (_pLife <= 0f)
         {
