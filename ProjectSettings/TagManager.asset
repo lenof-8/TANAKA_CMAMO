@@ -9,6 +9,7 @@ TagManager:
   - Moneda
   - Cura
   - Trampa
+  - TrapBullet
   layers:
   - Default
   - TransparentFX
