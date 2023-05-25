@@ -19,10 +19,18 @@ public class Cura : MonoBehaviour
         if (collision.gameObject.CompareTag("Cura"))
         {
             changePoints();
-            Destroy(gameObject);
+        }
+
+
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Trampa"))
+        {
+            pstats._pLife -= 10;
         }
     }
-
+    
     void changePoints()
     {
         float a = 30;

@@ -8,6 +8,7 @@ TagManager:
   - PlayerBullet
   - Moneda
   - Cura
+  - Trampa
   layers:
   - Default
   - TransparentFX
